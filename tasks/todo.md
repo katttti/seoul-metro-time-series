@@ -7,10 +7,23 @@
 - [ ] **CHECKPOINT A** — raw CSV 존재 및 날짜 범위 검증 ⚠️ API 키 재발급 필요 (현재 키 INFO-200 반환)
 - [ ] **TASK 2** — `src/02_preprocessing.py` (정제, 보간, 파생변수)
 - [ ] **CHECKPOINT B** — processed CSV 스키마 검증 (10 컬럼, null=0, 4개 역)
-- [ ] **TASK 3** — `src/03_eda.py` → fig01~04 + descriptive_stats.csv
-- [ ] **TASK 4** — `src/04_stationarity.py` → fig05~07 + stationarity_tests.csv
-- [ ] **TASK 5** — `src/05_decomposition.py` → fig08~09
+- [ ] **TASK 3** — `src/03_eda.py`
+  - 산출물: `fig01_timeseries_overview.png`, `fig02_monthly_heatmap.png`, `fig03_weekday_boxplot.png`, `fig04_mon_fri_ratio.png`
+  - 테이블: `descriptive_stats.csv`
+- [ ] **TASK 4** — `src/04_stationarity.py`
+  - 산출물: `fig05_rolling_stats.png`, `fig06_acf_pacf_original.png`, `fig07_acf_pacf_differenced.png`
+  - 테이블: `stationarity_tests.csv`
+- [ ] **TASK 5** — `src/05_decomposition.py`
+  - 산출물: `fig08_stl_decomposition.png`, `fig09_seasonal_amplitude.png`
 - [ ] **CHECKPOINT C** — fig01~09 + 2개 CSV 전부 존재 확인
+
+## 1차 발표 PPT 슬라이드 → 산출물 매핑
+
+| 슬라이드 | 사용 산출물 |
+|---------|-----------|
+| Slide 3 (Data) | fig01 |
+| Slide 4 (EDA) | descriptive_stats.csv, fig02, fig03 |
+| Slide 5 (정상성 & ACF) | fig06, fig07, fig08 |
 
 ## 2차 발표 (이후)
 
